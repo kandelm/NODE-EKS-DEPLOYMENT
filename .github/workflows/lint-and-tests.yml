@@ -202,7 +202,7 @@ jobs:
             startsWith(github.event.pull_request.head.ref, 'dependabot/') == false &&
             github.event.pull_request.head.ref != 'chore/crowdin')
         # sha reference has no stable git tag reference or URL. see https://github.com/chromaui/chromatic-cli/issues/797
-        uses: chromaui/action@b984808b772126a9f44b2b7737b131b68a2ede32
+        uses: chromaui/action@dd2eecb9bef44f54774581f4163b0327fd8cf607
         with:
           workingDir: apps/site
           buildScriptName: storybook:build
